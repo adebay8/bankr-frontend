@@ -1,0 +1,32 @@
+// Fonts
+$primary-font: "Nunito Sans", sans-serif;
+
+$secondary-font: "Nunito Sans", sans-serif;
+$tertiary-font: "Proxima Nova", sans-serif;
+
+$default-font-size: 16px;
+
+// colors
+$primary-color: #ce4b41;
+$secondary-color: #235282;
+$danger-color: rgb(255, 77, 45);
+$warning-color: rgb(151, 122, 94);
+$success-color: #49b26d;
+$white-color: #ffffff;
+$black-color: #000000;
+
+// dark colors
+$primary-color-dark: darken($primary-color, 10%);
+$secondary-color-dark: darken($secondary-color, 10%);
+$success-color-dark: darken($success-color, 10%);
+$danger-color-dark: darken($danger-color, 10%);
+$warning-color-dark: darken($warning-color, 10%);
+
+// Font Colors
+$color-text: #4f6c8d;
+$color-text-light: #a3adb4;
+$color-text-lighter: #ccd6e1;
+
+$color-text-contrast: #ffffff;
+$color-text-contrast-light: #a7b5c6;
+$color-text-contrast-lighter: #5f5f63;

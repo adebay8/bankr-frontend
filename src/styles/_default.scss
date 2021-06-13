@@ -1,0 +1,70 @@
+@import "./theme";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+  font-family: $primary-font;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.dflex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.max-width-800 {
+  max-width: 800px;
+}
+
+.max-wdith-1000 {
+  max-width: 1000px;
+}
+
+.max-width-1200 {
+  max-width: 1200px;
+}
+
+.max-width-1400 {
+  max-width: 1400px;
+}
+
+.max-width-1500 {
+  max-width: 1500px;
+}

@@ -1,0 +1,116 @@
+@import "../../styles/default";
+
+.banner {
+  @media screen and (min-width: 1290px) {
+    min-height: calc(100vh - 80px);
+  }
+
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  padding: 0px 32px;
+  background-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .web-app--images {
+    .banner-mobile--image__container {
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        height: 50px;
+        width: 50px;
+        border: 4px solid $primary-color;
+        background: transparent;
+        position: absolute;
+        bottom: 9rem;
+        z-index: 1;
+        top: 3.2rem;
+        left: 3rem;
+      }
+
+      img.banner-mobile--image {
+        height: 581px;
+        width: 396px;
+        position: relative;
+        top: 0.2rem;
+        z-index: 2;
+        border-style: none;
+        user-select: none;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        height: 40px;
+        width: 40px;
+        border: 4px solid $primary-color;
+        border-radius: 50%;
+        background: transparent;
+        position: absolute;
+        z-index: 1;
+        bottom: 4%;
+        left: 74.5%;
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 490px;
+      width: 490px;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+      top: 22.5%;
+      background: linear-gradient(
+          153deg,
+          rgb(249, 246, 251) 0px,
+          rgb(242, 223, 255) 100%
+        )
+        0px 0px no-repeat padding-box padding-box transparent;
+      right: -1rem;
+    }
+  }
+
+  .banner-text--container {
+    max-width: 576px;
+    color: rgb(34, 34, 34);
+    position: relative;
+    top: -80px;
+    z-index: 1;
+
+    h1 {
+      font-weight: 900;
+      font-size: 3em;
+      margin: 0.67em 0px;
+      line-height: 1.2em;
+    }
+
+    & > span:first-of-type {
+      display: block;
+      font-weight: 300;
+      line-height: 1.7em;
+      font-size: 1.1em;
+    }
+
+    .button-container {
+      position: relative;
+      top: 30px;
+
+      .action-button {
+        width: 190px;
+        margin-left: -10px;
+        margin-right: 5px;
+      }
+      .action-button-apple {
+        width: 152px;
+      }
+    }
+  }
+}
