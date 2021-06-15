@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
-import { Button, Icon } from "../../components";
+import { Button, Icon, Notification } from "../../components";
 import { actionSetUser } from "../../redux/actions/userAction";
 import { bankr } from "../../utils/Axios";
-import { USER_TOKEN } from "../../utils/helper";
+import { errorHandler, USER_TOKEN } from "../../utils/helper";
 import "./Authentication.scss";
 
 const Authentication = (props) => {
@@ -27,7 +27,10 @@ const Authentication = (props) => {
           props.actionSetUser(res.data.user);
           history.push("/");
         })
-        .catch((error) => console.log(error.response));
+        .catch((error) => {
+          Notification.bubble({ type: "error", content: errorHandler(error) });
+          setLoading(false);
+        });
     } else {
       bankr
         .post("/user/create", { username: email, password })
@@ -37,7 +40,10 @@ const Authentication = (props) => {
           props.actionSetUser(res.data.user);
           history.push("/");
         })
-        .catch((error) => console.log(error.response));
+        .catch((error) => {
+          Notification.bubble({ type: "error", content: errorHandler(error) });
+          setLoading(false);
+        });
     }
   };
 
