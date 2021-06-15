@@ -1,5 +1,5 @@
 const developmentURL = "http://localhost:5000";
-const liveURL = "https://api.bankr.com";
+const liveURL = "https://bankr.herokuapp.com/";
 
 const host = window.location.host;
 
