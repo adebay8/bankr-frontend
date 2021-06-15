@@ -7,7 +7,7 @@ $tertiary-font: "Proxima Nova", sans-serif;
 $default-font-size: 16px;
 
 // colors
-$primary-color: #ce4b41;
+$primary-color: #4f39f6;
 $secondary-color: #235282;
 $danger-color: rgb(255, 77, 45);
 $warning-color: rgb(151, 122, 94);
@@ -21,6 +21,13 @@ $secondary-color-dark: darken($secondary-color, 10%);
 $success-color-dark: darken($success-color, 10%);
 $danger-color-dark: darken($danger-color, 10%);
 $warning-color-dark: darken($warning-color, 10%);
+
+// light colors
+$primary-color-light: lighten($primary-color, 10%);
+$secondary-color-light: lighten($secondary-color, 10%);
+$success-color-light: lighten($success-color, 10%);
+$danger-color-light: lighten($danger-color, 10%);
+$warning-color-light: lighten($warning-color, 10%);
 
 // Font Colors
 $color-text: #4f6c8d;

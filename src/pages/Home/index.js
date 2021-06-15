@@ -23,12 +23,12 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div class="web-app--images">
-          <div class="banner-mobile--image__container">
+        <div className="web-app--images">
+          <div className="banner-mobile--image__container">
             <img
               src="https://iflux.app/static/media/banner-iphone-mockup.8e204f52.webp"
               alt="flux on a large screen display device"
-              class="banner-mobile--image"
+              className="banner-mobile--image"
             />
           </div>
         </div>

@@ -1,0 +1,81 @@
+@import "../../../styles/default";
+
+.dashboard {
+  aside {
+    width: 335px;
+    padding: 60px;
+    padding-top: 45px;
+    background-color: #edf1f4;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    .header {
+      h3 {
+        font-size: 1.7rem;
+      }
+
+      img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: #ccd1dd;
+      }
+      margin-bottom: 22px;
+    }
+
+    Button {
+      margin-bottom: 25px;
+    }
+
+    .section-title {
+      color: #9ba0ab;
+      font-size: 13px;
+    }
+
+    .nav-links {
+      padding: 0px 0px 15px 10px;
+
+      .nav-item {
+        padding: 6px 0px 6px 0px;
+        margin: 9px 0px 5px 0px;
+        span:first-child {
+          margin-right: 20px;
+          color: #a0a7b7;
+        }
+        a {
+          color: #545a6b;
+          text-decoration: none;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .home-redirect {
+      position: absolute;
+      bottom: 20px;
+      width: 200px;
+      font-size: 13px;
+
+      span:first-child {
+        margin-right: 10px;
+        color: #a0a7b7;
+      }
+      a {
+        color: #545a6b;
+        text-decoration: none;
+      }
+    }
+  }
+
+  main {
+    height: 100vh;
+    position: relative;
+    padding: 50px 60px 60px 60px;
+    section {
+      max-height: 100%;
+      overflow: auto;
+      width: calc(100vw - 455px);
+    }
+  }
+}
