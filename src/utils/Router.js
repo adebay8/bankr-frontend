@@ -29,7 +29,9 @@ const Router = (props) => {
         path="/"
         component={(props) => (
           <MainLayout {...props}>
-            <Route exact path="/" component={Home} />
+            <AuthLayout>
+              <Route exact path="/" component={Home} />
+            </AuthLayout>
           </MainLayout>
         )}
       />

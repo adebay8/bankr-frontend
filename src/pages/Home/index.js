@@ -3,6 +3,7 @@ import "./Home.scss";
 import { Link } from "react-router-dom";
 import playStoreImage from "../../assets/google-play-badge.png";
 import appStoreImage from "../../assets/app-store.svg";
+import alloyapp from "../../assets/alloy-mockup.png";
 
 const Home = () => {
   return (
@@ -26,7 +27,7 @@ const Home = () => {
         <div className="web-app--images">
           <div className="banner-mobile--image__container">
             <img
-              src="https://iflux.app/static/media/banner-iphone-mockup.8e204f52.webp"
+              src={alloyapp}
               alt="flux on a large screen display device"
               className="banner-mobile--image"
             />

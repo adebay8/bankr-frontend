@@ -1,13 +1,11 @@
 import axios from "axios";
-import { USER_TOKEN } from "./helper";
+import { getToken } from "./helper";
 import { ActiveURL } from "./urls";
-
-const token = localStorage.getItem(USER_TOKEN);
 
 export const bankr = axios.create({
   baseURL: ActiveURL,
   headers: {
-    Authorization: `Bearer ${token}`,
+    Authorization: `Bearer ${getToken()}`,
     "Content-Type": "application/json",
   },
 });
