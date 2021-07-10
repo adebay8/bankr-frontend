@@ -41,7 +41,7 @@ export function numberWithCommas(n, separator = ",") {
   return `${num}${decimals}`;
 }
 
-const Wallet = (props) => {
+const Wallet = ({ actionSetUserWallet, ...props }) => {
   const history = useHistory();
   const [loading, setLoading] = useState(false);
   const [cards, setCards] = useState([]);
@@ -128,7 +128,7 @@ const Wallet = (props) => {
       bankr
         .get("/transaction/wallet")
         .then((res) => {
-          props.actionSetUserWallet({ ...res.data.customer });
+          actionSetUserWallet({ ...res.data.customer });
           getCards();
         })
         .catch((err) =>
@@ -136,7 +136,7 @@ const Wallet = (props) => {
         );
     };
     getWallet();
-  }, []);
+  }, [actionSetUserWallet]);
 
   return (
     <div className="wallet">
@@ -193,7 +193,7 @@ const Wallet = (props) => {
                 />
                 <BalanceCard
                   title="Expenses"
-                  amount={numberWithCommas(props.wallet.wallet_balance)}
+                  amount={0}
                   iconColor="#D94F4C"
                   color="#f9e4e4"
                 />
